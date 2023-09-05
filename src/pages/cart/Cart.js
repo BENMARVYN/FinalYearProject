@@ -128,7 +128,7 @@ const Cart = () => {
                       <td className={styles.icons}>
                         <FaTrashAlt
                           size={19}
-                          color="red"
+                          color="black"
                           onClick={() => removeFromCart(cart)}
                         />
                       </td>
@@ -139,7 +139,7 @@ const Cart = () => {
             </table>
 
             <div className={styles.summary}>
-              <button className="--btn --btn-danger" onClick={clearCart} >
+              <button className="--btn --btn-addtocart" onClick={clearCart} >
                 Clear Cart
               </button>
               <div className={styles.checkout}>

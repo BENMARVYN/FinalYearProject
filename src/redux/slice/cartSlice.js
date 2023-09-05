@@ -13,7 +13,8 @@ const initialState = {
 const cartSlice = createSlice({
   name: "cart",
   initialState,
-  reducers: {
+  reducers: { 
+    
     ADD_TO_CART(state, action) {
         console.log(action.payload);
       const productIndex = state.cartItems.findIndex(

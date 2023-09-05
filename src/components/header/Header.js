@@ -16,12 +16,15 @@ import {
   } from "../../redux/slice/cartSlice";
 
 
+
+
 const logo = (
     <div className={styles.logo}>
     <Link to="/">
-        <h2>
+    <img src="https://i.postimg.cc/KYWDm1F6/naximlogo.png" alt="" />
+        {/* <h2>
         NAXIM<span>STORES</span>.                        
-        </h2>
+        </h2> */}
     </Link>
 </div>
 );
@@ -131,6 +134,12 @@ const cart = (
                     {logo} 
                     <FaTimes size={22} color="#fff" onClick={hideMenu}/>
                 </li>
+                <ShowOnLogin>
+                    <a href='#home' style={{color: "yellow"}}>
+                        <FaUserCircle size={16}/>
+                        Welcome, {displayName}
+                    </a>
+                    </ShowOnLogin>
                 <li>                
                 <AdminOnlyLink>
                   <Link to="/admin/home">
@@ -149,12 +158,12 @@ const cart = (
                     <ShowOnLogout>                    
                     <NavLink to="/login" className={activeLink}>Login</NavLink>
                     </ShowOnLogout>
-                    <ShowOnLogin>
+                    {/* <ShowOnLogin>
                     <a href='#home' style={{color: "yellow"}}>
                         <FaUserCircle size={16}/>
                         Welcome, {displayName}
                     </a>
-                    </ShowOnLogin>
+                    </ShowOnLogin> */}
                     <ShowOnLogin>
                     <NavLink to="/order-history" className={activeLink}>My orders</NavLink>
                     </ShowOnLogin>

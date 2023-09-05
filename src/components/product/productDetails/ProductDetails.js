@@ -72,7 +72,7 @@ const ProductDetails = () => {
 
                   <div className={styles.content}>
                     <h3>{product.name}</h3>
-                    <p className={styles.price}>{`$${product.price}`}</p>
+                    <p className={styles.price}>{`Ksh ${product.price}`}</p>
                     <p>{product.desc}</p>
                     <p>
                       <b>SKU</b> {product.id}
@@ -104,7 +104,7 @@ const ProductDetails = () => {
                     </div>
 
                     <button
-                      className="--btn --btn-danger"
+                      className="--btn --btn-addtocart"
                       onClick={() => addToCart(product)}
                     >
                       ADD TO CART

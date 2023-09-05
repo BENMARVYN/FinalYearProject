@@ -92,7 +92,7 @@ const ProductFilter = () => {
           />
         </div>
         <br />
-        <button className="--btn --btn-red" onClick={clearFilters}>
+        <button className="--btn --btn-addtocart" onClick={clearFilters}>
           Reset Filter
         </button>
       </div>

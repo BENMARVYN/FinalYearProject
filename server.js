@@ -17,7 +17,7 @@ app.use(express.json());
 // }
 
 app.get("/", (req, res) => {
-  res.send("Welcome to eShop website.");
+  res.send("Welcome to NAXIM website.");
 });
 
 const array = [];

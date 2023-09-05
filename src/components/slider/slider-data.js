@@ -1,7 +1,7 @@
 export const sliderData = [
   {
     image: "https://i.postimg.cc/CKrFpj5x/ps5.jpg",
-    heading: "Awesome Gadgets",
+    heading: "Latest Electronics",
     desc: "Up to 10% off on all onsale proucts.",
   },
     {
